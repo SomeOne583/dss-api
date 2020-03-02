@@ -40,5 +40,6 @@ module DssApi
       end
     end
     config.middleware.use Rack::Attack
+    config.autoload = :classic
   end
 end
