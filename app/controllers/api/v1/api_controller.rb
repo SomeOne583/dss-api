@@ -1,4 +1,4 @@
 module Api::V1
-  class ApiController < AplicationController
+  class ApiController < ApPlicationController
   end
 end
