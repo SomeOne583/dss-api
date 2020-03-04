@@ -3,7 +3,7 @@ module Api::V1
     require_relative "mazeClass"
 
     def index
-      params[:size] ? (size = params[:size].to_i) : (size = 5)
+      params[:size] ? (size = params[:size].to_i) : (size = 6)
 
       @maze = MazeClass.new(size)
       @maze.mazeGen(@maze.maze)
