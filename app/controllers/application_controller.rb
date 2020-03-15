@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
 
     def authenticate_token
         authenticate_with_http_token do |token, options|
-            return token == "f98e847a-03bc-43d3-8dfa-1f192902b15a"
+            return token == ENV['TOKEN']
         end
     end
 
